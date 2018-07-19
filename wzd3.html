@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="css/d3.css">
+</head>
+<body>
+<div class="main">
+    <div class="logo">
+        <img src="source/lo.png" alt="">
+    </div>
+    <div class="intro">
+        <p>2006年，大连发现王国主题公园在金石滩国家旅游度假区拔地而起。发现王国主题公园是大连海昌集团和新加坡西瑞克石油有限公司共同投资兴建的，公园占地47万平米，由曾参与迪士尼设计的美国RPVA公司进行规划设计。园区分为六大景区，分别是<span>疯狂小镇</span>、<span>神秘沙漠</span>、<span>金属工厂</span>、<span>魔法森林</span>、<span>传奇城堡</span>和<span>婚礼殿堂</span>。其中，每个小主题公园都融入了不同历史时期和不同地域文化的不同建筑,歌舞表演,商品餐饮,娱乐设施等，而且每个主题区都有一个故事线贯穿其中。</p>
+    </div>
+    <div class="title">
+        <h1>DISCOVERYLAND</h1>
+    </div>
+    <div class="timelist">
+        <img src="source/map.jpg" alt="">
+        <p class="p1">旺季:</p>
+        <p>六月：6月2日 —— 6 月30日 09:30 —— 21:00</p>
+        <p>七月：7月1日——8月31日 09：30——21：30</p>
+        <p>八月：7月1日——8月31日 09：30——21：30</p>
+        <p>九月：9月1日——9月30日 09：30——17：00</p>
+        <p>十月：10月7日——10月31日 09：30——17：00</p>
+    </div>
+
+    <div class="theme">
+        <ul>
+            <li>
+                <p class="name1 name">发现广场</p>
+                <p>  发现广场，是发现王国寻梦的起点，这不仅是游客进出公园的通道，也是购买具有公园主题文化特色商品和休憩的场所。</p>
+            </li>
+            <li>
+                <p class="name2 name">传奇城堡</p>
+                <p> 穿越热闹繁华的“美国大街”，一座充满中世纪欧洲风情的古代城堡便呈现在游客眼前，神秘的通道将带领你进入魔法时代的中古欧洲，推开沉重的城门，种种神奇的魔法与不可思议的事情将在这里发生，伴随你走过惊险紧张的旅程。</p>
+            </li>
+            <li>
+                <p class="name3 name">魔法森林</p>
+                <p>穿过惊心动魄的传奇古堡，眼前就是一片美丽的绿色世界。这是金石?发现王国神奇的发源地，这里浓郁的热带雨林风貌让游客仿佛置身于亚马逊河流域。</p>
+            </li>
+            <li>
+                <p class="name4 name">金属工厂</p>
+                <p> 漂流过惊险奇幻的热带雨林，就来到了一个金属的国度，形态各异的金属建筑让你置身于过去、现在、未来的世界，让你重温一次人类文明的进程。</p>
+            </li>
+            <li>
+                <p class="name5 name">神秘沙漠</p>
+                <p>遨游在科技的海洋中尚未尽兴，时空便立刻转换成一片异域空间。具有浓郁的中东伊斯兰风格的建筑，重现了"丝绸之路"的人文风貌。</p>
+            </li>
+        </ul>
+    </div>
+
+
+    <div id="box1">
+        <form>
+            <label><input type="radio" name="mode" value="multiples" checked>季度</label>
+            <label><input type="radio" name="mode" value="stacked">总体</label>
+        </form>
+    </div>
+    <div id="box2">
+
+    </div>
+    <div id="box3">
+        <div align="center">
+            <div align="left" style="width: 900px;">
+                <svg id="rectangularareachart1" width="400" height="240"></svg>
+                <svg id="rectangularareachart2" width="400" height="240"></svg>
+            </div>
+            <div align="left" style="width: 900px;">
+                <svg id="rectangularareachart3" width="400" height="240"></svg>
+                <svg id="rectangularareachart4" width="250" height="240"></svg>
+            </div>
+        </div>
+    </div>
+    <div id="box5">
+    </div>
+</div>
+<script src="js/d3.v3.js"></script>
+<script src="source/data2.js"></script>
+<script src="js/rectangularAreaChart.js"></script>
+<script src="js/style.js"></script>
+</body>
+</html>
